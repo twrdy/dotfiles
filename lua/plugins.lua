@@ -4,7 +4,6 @@ return {
   "sheerun/vim-polyglot",
   "folke/tokyonight.nvim",
   "neovim/nvim-lspconfig",
-  "nvim-lua/completion-nvim",
   "anott03/nvim-lspinstall",
   "kyazdani42/nvim-web-devicons",
   "nvim-lua/popup.nvim",

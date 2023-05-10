@@ -16,8 +16,9 @@ local sources = {
 
   -- python
   b.diagnostics.flake8.with { extra_args = { "--max-line-length", "120" } },
-  b.formatting.black.with { extra_args = { "--line-length", "120" } },
+  -- b.formatting.black.with { extra_args = { "--line-length", "120" } },
   -- b.formatting.yapf.with { extra_args = { "--style={based_on_style: google, column_limit: 120, indent_width: 4}"} },
+  b.formatting.yapf.with { extra_args = { "--style={based_on_style: google, column_limit: 120}"} },
 
   -- cpp
   b.diagnostics.cpplint,
@@ -30,8 +31,11 @@ local sources = {
   -- haskell
   b.formatting.stylish_haskell,
 
-  -- refactoring
-  b.code_actions.refactoring,
+  -- xml
+  b.formatting.xmlformat,
+
+  -- js 
+  b.formatting.prettier;
 }
 
 null_ls.setup {

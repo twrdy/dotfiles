@@ -52,6 +52,11 @@ lspconfig.ltex.setup({
   capabilities = capabilities,
 })
 
+lspconfig.clangd.setup({
+  on_attach = custom_on_attach,
+  capabilities = capabilities,
+})
+
 lspconfig.hls.setup({
   on_attach = custom_on_attach,
   capabilities = capabilities,
@@ -59,6 +64,7 @@ lspconfig.hls.setup({
 
 local cmp = require('cmp')
 local lspkind = require('lspkind')
+
 
 cmp.setup({
   snippet = {
